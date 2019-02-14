@@ -45,8 +45,7 @@ public class Card {
      * @return this <code>Card's</code> suit.
      */
     public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		return suit;
     }
 
     /**
@@ -54,8 +53,7 @@ public class Card {
      * @return this <code>Card's</code> rank.
      */
     public String rank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		return rank;
     }
 
     /**
@@ -63,8 +61,7 @@ public class Card {
      * @return this <code>Card's</code> point value.
      */
     public int pointValue() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		return pointValue;
     }
 
     /** Compare this card with the argument.
@@ -78,20 +75,34 @@ public class Card {
 
     }
 
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public void setPointValue(int pointValue) {
+        this.pointValue = pointValue;
+    }
+
     /**
      * Converts the rank, suit, and point value into a string in the format
-     *     "[Rank] of [Suit] (point value = [PointValue])".
+     * "[Rank] of [Suit] (point value = [PointValue])".
      * This provides a useful way of printing the contents
      * of a <code>Deck</code> in an easily readable format or performing
      * other similar functions.
      *
      * @return a <code>String</code> containing the rank, suit,
-     *         and point value of the card.
+     * and point value of the card.
      */
-    @Override
     public String toString() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+        return "Card{" +
+                "suit='" + suit + '\'' +
+                ", rank='" + rank + '\'' +
+                ", pointValue=" + pointValue +
+                '}';
     }
 }
 
