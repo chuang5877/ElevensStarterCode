@@ -71,7 +71,7 @@ public class Card {
      *         false otherwise.
      */
     public boolean matches(Card otherCard) {
-        return this.rank==otherCard.rank&&this.pointValue==otherCard.pointValue&&this.suit==otherCard.suit;
+        return this.rank==otherCard.rank&&this.pointValue==otherCard.pointValue&&this.suit==otherCard.suit; 
     }
 
     public void setSuit(String suit) {
